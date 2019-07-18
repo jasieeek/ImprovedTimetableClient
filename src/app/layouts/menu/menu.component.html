@@ -1,0 +1,27 @@
+<aside>
+  <h3>Groups</h3>
+  <ng-container *ngFor="let class of classes">
+    <a (click)="toTimetableByClassName(class.name)" class="group&class-link">{{class.name}}</a>
+  </ng-container>
+  <h3>Teachers</h3>
+  <ng-container *ngFor="let teacher of teachers">
+    <a (click)="toTimetableByTeacherName(teacher.name, teacher.surname)" class="teacher-link" >{{teacher.name + " " + teacher.surname | teacherName}}</a>
+  </ng-container>
+  <h3>Classrooms</h3>
+  <ng-container *ngFor="let classroom of classrooms">
+    <a (click)="toTimetableByClassroomName(classroom.name)" class="group&class-link">{{classroom.name}}</a>
+  </ng-container>
+  <h3>For admin</h3>
+<!--  <a class="teacher-link" routerLink="/form">FORM</a>-->
+<!--  <a class="teacher-link" routerLink="/form/add-teacher">Add teacher</a>-->
+  <a *ngIf="!authService.isUserLoggedIn()" class="teacher-link" routerLink="/login">Log in</a>
+  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/logout">Log out</a>
+  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/add-lesson">Add lesson</a>
+  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/del-lesson">Del lesson</a>
+  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/add-teacher">Add teacher</a>
+  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/del-teacher">Del teacher</a>
+  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/add-classroom">Add classroom</a>
+  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/del-classroom">Del classroom</a>
+  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/add-class">Add class</a>
+  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/del-class">Del class</a>
+</aside>

@@ -1,0 +1,49 @@
+aside {
+  width: 15%;
+  height: auto;
+  float: right;
+  margin-right: 1%;
+  padding: 2%;
+  background-color: #191919;
+  color: rgb(239, 179, 1);
+  border-radius: 10px;
+  font-family: "Calibri Light";
+}
+
+a:hover, a:active {
+  background-color: rgb(239, 179, 1);
+  color: black;
+}
+
+.group\&class-link {
+  width: 50px;
+  width: auto;
+  padding: 5px;
+  background-color: #303032;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  margin-bottom: 8%;
+  margin-right: 5%;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.teacher-link {
+  width: auto;
+  padding: 5px;
+  background-color: #303032;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+  margin-bottom: 8%;
+  margin-right: 5%;
+  border-radius: 8px;
+  cursor: pointer;
+}
