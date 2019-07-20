@@ -13,6 +13,7 @@ import {MenuService} from './core/services/menu.service';
 import {HttpClientModule} from '@angular/common/http';
 import {LoginModule} from './modules/login/login.module';
 import { TeacherNamePipe } from './core/pipes/teacher-name.pipe';
+import { SortListPipe } from './core/pipes/sort-list.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TeacherNamePipe } from './core/pipes/teacher-name.pipe';
     HeaderComponent,
     MenuComponent,
     ContentComponent,
-    TeacherNamePipe
+    TeacherNamePipe,
+    SortListPipe
   ],
   imports: [
     BrowserModule,
