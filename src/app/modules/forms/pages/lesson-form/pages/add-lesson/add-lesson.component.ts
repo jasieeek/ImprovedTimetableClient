@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import {Lesson} from '../../../../../core/models/lesson';
-import {Class} from '../../../../../core/models/class';
-import {Classroom} from '../../../../../core/models/classroom';
-import {Teacher} from '../../../../../core/models/teacher';
-import {FormService} from '../../../../../core/services/form.service';
-import {MenuService} from '../../../../../core/services/menu.service';
+import {Lesson} from '../../../../../../core/models/lesson';
+import {Class} from '../../../../../../core/models/class';
+import {Classroom} from '../../../../../../core/models/classroom';
+import {Teacher} from '../../../../../../core/models/teacher';
+import {FormService} from '../../../../../../core/services/form.service';
+import {MenuService} from '../../../../../../core/services/menu.service';
 
 @Component({
   selector: 'app-add-lesson',

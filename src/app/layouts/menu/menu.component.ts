@@ -4,6 +4,7 @@ import {Teacher} from '../../core/models/teacher';
 import {Classroom} from '../../core/models/classroom';
 import {MenuService} from '../../core/services/menu.service';
 import {AuthenticationService} from '../../core/services/authentication.service';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -16,7 +17,10 @@ export class MenuComponent implements OnInit {
   teachers: Teacher[];
   classrooms: Classroom[];
 
-  constructor(private menuService: MenuService, private authService: AuthenticationService) { }
+  constructor(private route: ActivatedRoute,
+              private router: Router,
+              private menuService: MenuService,
+              private authService: AuthenticationService) { }
 
   // tslint:disable-next-line:ban-types
   toTimetableByClassName(className: String) {

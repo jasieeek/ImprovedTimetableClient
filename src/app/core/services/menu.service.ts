@@ -14,9 +14,9 @@ export class MenuService {
   private classroomsUrl: string;
 
   constructor(private http: HttpClient) {
-    this.classesUrl = 'http://localhost:8080/group';
-    this.teachersUrl = 'http://localhost:8080/teacher';
-    this.classroomsUrl = 'http://localhost:8080/classroom';
+    this.classesUrl = 'http://localhost:8080/group/sorted';
+    this.teachersUrl = 'http://localhost:8080/teacher/sorted';
+    this.classroomsUrl = 'http://localhost:8080/classroom/sorted';
   }
 
   public findAllClasses(): Observable<Class[]> {

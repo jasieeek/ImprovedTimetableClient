@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Teacher} from '../../../../../core/models/teacher';
-import {FormService} from '../../../../../core/services/form.service';
-import {MenuService} from '../../../../../core/services/menu.service';
+import {Teacher} from '../../../../../../core/models/teacher';
+import {FormService} from '../../../../../../core/services/form.service';
+import {MenuService} from '../../../../../../core/services/menu.service';
 
 @Component({
   selector: 'app-del-teacher',

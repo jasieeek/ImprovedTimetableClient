@@ -13,5 +13,4 @@ export class TeacherNamePipe implements PipeTransform {
       return splited[0].charAt(0) + '.' + splited[1] + '-' + splited[2];
     }
   }
-
 }

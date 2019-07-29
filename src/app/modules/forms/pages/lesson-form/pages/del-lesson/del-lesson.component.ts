@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Lesson} from '../../../../../core/models/lesson';
-import {FormService} from '../../../../../core/services/form.service';
-import {MenuService} from '../../../../../core/services/menu.service';
+import {Lesson} from '../../../../../../core/models/lesson';
+import {FormService} from '../../../../../../core/services/form.service';
+import {MenuService} from '../../../../../../core/services/menu.service';
 
 @Component({
   selector: 'app-del-lesson',

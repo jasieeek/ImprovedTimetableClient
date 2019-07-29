@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Classroom} from '../../../../../core/models/classroom';
+import {Classroom} from '../../../../../../core/models/classroom';
 import {ActivatedRoute, Router} from '@angular/router';
-import {FormService} from '../../../../../core/services/form.service';
+import {FormService} from '../../../../../../core/services/form.service';
 
 @Component({
   selector: 'app-add-classroom',

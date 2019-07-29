@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {AddTeacherComponent} from './teacher-form/pages/add-teacher/add-teacher.component';
+import {AddTeacherComponent} from './pages/teacher-form/pages/add-teacher/add-teacher.component';
 import {FormComponent} from './form.component';
-import {DelTeacherComponent} from './teacher-form/pages/del-teacher/del-teacher.component';
+import {DelTeacherComponent} from './pages/teacher-form/pages/del-teacher/del-teacher.component';
 
 const routes: Routes = [
   // {

@@ -9,23 +9,18 @@ thead {
 }
 
 th, td {
-  text-align: left;
-  padding: 0.7%;
+  padding: 0.5%;
   font-family: "Calibri Light";
+  text-align: center;
+  font-size: 1.5vw;
+  border: 1px solid white;
 }
+
 
 h1, h2 {
   text-align: center;
   width: 100%;
   color: rgb(239, 179, 1);
-}
-
-table, th, td {
-  border: 1px solid white;
-  border-collapse: collapse;
-  text-align: center;
-  font-size: 1.5vw;
-
 }
 
 .nr-to-white {

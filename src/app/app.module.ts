@@ -34,7 +34,7 @@ import { SortListPipe } from './core/pipes/sort-list.pipe';
     TimetableModule
   ],
   providers: [MenuService],
-  exports: [TeacherNamePipe],
+  exports: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

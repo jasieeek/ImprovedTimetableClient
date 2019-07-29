@@ -7,14 +7,16 @@ import {AppModule} from '../../app.module';
 import {TeacherNamePipe} from '../../core/pipes/teacher-name.pipe';
 
 @NgModule({
-  declarations: [ForGroupsComponent, ForTeachersComponent, ForClassroomsComponent],
+  declarations: [ForGroupsComponent, ForTeachersComponent, ForClassroomsComponent, ],
   exports: [
     ForGroupsComponent,
     ForTeachersComponent,
-    ForClassroomsComponent
+    ForClassroomsComponent,
+
   ],
   imports: [
-    CommonModule
+    CommonModule,
+
   ],
   providers: []
 })

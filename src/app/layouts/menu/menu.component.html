@@ -8,7 +8,7 @@
     <a (click)="toTimetableByTeacherName(teacher.name, teacher.surname)" class="teacher-link" >{{teacher.name + " " + teacher.surname | teacherName}}</a>
   </ng-container>
   <h3>Classrooms</h3>
-  <ng-container *ngFor="let classroom of classrooms | sortList">
+  <ng-container *ngFor="let classroom of classrooms">
     <a (click)="toTimetableByClassroomName(classroom.name)" class="group&class-link">{{classroom.name}}</a>
   </ng-container>
   <h3>For admin</h3>
