@@ -47,6 +47,10 @@ export class FormService {
     return this.http.delete(this.delClassesUrl + '/' + id);
   }
 
+  public editClass(group: Class, id: string) {
+    return this.http.put(this.classesUrl + '/' + id, group);
+  }
+
   public saveTeacher(teacher: Teacher) {
     return this.http.post<Teacher>(this.teachersUrl, teacher);
   }
@@ -55,12 +59,20 @@ export class FormService {
     return this.http.delete(this.delTeachersUrl + '/' + id);
   }
 
+  public editTeacher(teacher: Teacher, id: string) {
+    return this.http.put(this.teachersUrl + '/' + id, teacher);
+  }
+
   public saveClassroom(classroom: Classroom) {
     return this.http.post<Classroom>(this.classroomsUrl, classroom);
   }
 
   public deleteClassroom(id: string) {
     return this.http.delete(this.delClassroomsUrl + '/' + id);
+  }
+
+  public editClassroom(classroom: Classroom, id: string) {
+    return this.http.put(this.classroomsUrl + '/' + id, classroom);
   }
 
   public findAllLessons(): Observable<Lesson[]> {

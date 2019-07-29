@@ -6,9 +6,9 @@
       <input type="text" [(ngModel)]="class.name"
              class="form-control"
              pattern="[0-9][A-Z]"
-             title="Digit and high letter"
+             title="Digit and capital letter"
              id="name" name="name"
-             placeholder="Enter number of classroom"
+             placeholder="Enter name of class"
              required >
     </div>
     <button type="submit" [disabled]="!classForm.form.valid">Add</button>

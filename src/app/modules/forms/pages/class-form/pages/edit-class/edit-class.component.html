@@ -1,0 +1,21 @@
+<div class="content">
+  <h2>Edit class</h2>
+  <form (ngSubmit)="onSubmit()" #classDelForm="ngForm">
+    <label>Choose a class</label>
+    <select name="teacherName" [(ngModel)]="classId" required>
+      <option value="" disabled selected>Select class name</option>
+      <option *ngFor="let group of classes" value="{{group.id}}">{{group.name}}</option>
+    </select>
+    <br>
+    <br>
+    <label>Set name</label>
+    <input type="text" [(ngModel)]="newClassName"
+           class="form-control"
+           pattern="[0-9][A-Z]"
+           title="Digit and capital letter"
+           id="name" name="name"
+           placeholder="Enter name of new class"
+           required >
+    <button type="submit" [disabled]="!classDelForm.form.valid">Edit</button>
+  </form>
+</div>

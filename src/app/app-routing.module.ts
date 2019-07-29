@@ -15,6 +15,9 @@ import {AddLessonComponent} from './modules/forms/pages/lesson-form/pages/add-le
 import {DelLessonComponent} from './modules/forms/pages/lesson-form/pages/del-lesson/del-lesson.component';
 import {AddClassroomComponent} from './modules/forms/pages/classroom-form/pages/add-classroom/add-classroom.component';
 import {DelClassroomComponent} from './modules/forms/pages/classroom-form/pages/del-classroom/del-classroom.component';
+import {EditClassComponent} from './modules/forms/pages/class-form/pages/edit-class/edit-class.component';
+import {EditClassroomComponent} from './modules/forms/pages/classroom-form/pages/edit-classroom/edit-classroom.component';
+import {EditTeacherComponent} from './modules/forms/pages/teacher-form/pages/edit-teacher/edit-teacher.component';
 
 
 const parentModuleRoutes: Routes = [
@@ -60,6 +63,10 @@ const parentModuleRoutes: Routes = [
             component: DelClassComponent
           },
           {
+            path: 'edit-class',
+            component: EditClassComponent
+          },
+          {
             path: 'add-teacher',
             component: AddTeacherComponent
           },
@@ -68,12 +75,20 @@ const parentModuleRoutes: Routes = [
             component: DelTeacherComponent
           },
           {
+            path: 'edit-teacher',
+            component: EditTeacherComponent
+          },
+          {
             path: 'add-classroom',
             component: AddClassroomComponent
           },
           {
             path: 'del-classroom',
             component: DelClassroomComponent
+          },
+          {
+            path: 'edit-classroom',
+            component: EditClassroomComponent
           }
         ]
       },

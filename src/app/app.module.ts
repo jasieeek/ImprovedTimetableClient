@@ -28,10 +28,10 @@ import { SortListPipe } from './core/pipes/sort-list.pipe';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule,
     FormModule,
     LoginModule,
-    TimetableModule
+    TimetableModule,
+    AppRoutingModule,
   ],
   providers: [MenuService],
   exports: [],

@@ -14,14 +14,17 @@
   <h3>For admin</h3>
 <!--  <a class="teacher-link" routerLink="/form">FORM</a>-->
 <!--  <a class="teacher-link" routerLink="/form/add-teacher">Add teacher</a>-->
-  <a *ngIf="!authService.isUserLoggedIn()" class="teacher-link" routerLink="/login">Log in</a>
-  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/logout">Log out</a>
-  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/add-lesson">Add lesson</a>
-  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/del-lesson">Del lesson</a>
-  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/add-teacher">Add teacher</a>
-  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/del-teacher">Del teacher</a>
-  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/add-classroom">Add classroom</a>
-  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/del-classroom">Del classroom</a>
-  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/add-class">Add class</a>
-  <a *ngIf="authService.isUserLoggedIn()" class="teacher-link" routerLink="/form/del-class">Del class</a>
+  <a *ngIf="!authService.isUserLoggedIn()" (click)="goToUp()" class="teacher-link" routerLink="/login">Log in</a>
+  <a *ngIf="authService.isUserLoggedIn()" (click)="goToUp()" class="teacher-link" routerLink="/logout">Log out</a>
+  <a *ngIf="authService.isUserLoggedIn()" (click)="goToUp()" class="teacher-link" routerLink="/form/add-lesson">Add lesson</a>
+  <a *ngIf="authService.isUserLoggedIn()" (click)="goToUp()" class="teacher-link" routerLink="/form/del-lesson">Del lesson</a>
+  <a *ngIf="authService.isUserLoggedIn()" (click)="goToUp()" class="teacher-link" routerLink="/form/add-teacher">Add teacher</a>
+  <a *ngIf="authService.isUserLoggedIn()" (click)="goToUp()" class="teacher-link" routerLink="/form/del-teacher">Del teacher</a>
+  <a *ngIf="authService.isUserLoggedIn()" (click)="goToUp()" class="teacher-link" routerLink="/form/edit-teacher">Edit teacher</a>
+  <a *ngIf="authService.isUserLoggedIn()" (click)="goToUp()" class="teacher-link" routerLink="/form/add-classroom">Add classroom</a>
+  <a *ngIf="authService.isUserLoggedIn()" (click)="goToUp()" class="teacher-link" routerLink="/form/del-classroom">Del classroom</a>
+  <a *ngIf="authService.isUserLoggedIn()" (click)="goToUp()" class="teacher-link" routerLink="/form/edit-classroom">Edit classroom</a>
+  <a *ngIf="authService.isUserLoggedIn()" (click)="goToUp()" class="teacher-link" routerLink="/form/add-class">Add class</a>
+  <a *ngIf="authService.isUserLoggedIn()" (click)="goToUp()" class="teacher-link" routerLink="/form/del-class">Del class</a>
+  <a *ngIf="authService.isUserLoggedIn()" (click)="goToUp()" class="teacher-link" routerLink="/form/edit-class">Edit class</a>
 </aside>

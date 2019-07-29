@@ -46,6 +46,10 @@ export class MenuComponent implements OnInit {
     location.assign(['timetable/classroom/' + classroomName]);
   }
 
+  goToUp() {
+    window.scrollTo(0, 0);
+  }
+
   ngOnInit() {
     this.menuService.findAllClasses().subscribe( data => {
       this.classes = data;
